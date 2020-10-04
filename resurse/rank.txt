@@ -1,0 +1,8 @@
+1-Rokie,
+3-Beginner,
+7-Starter,
+10-Cat,
+13-Owl,
+17-Wolf,
+20-Superman,
+25-Spiderman

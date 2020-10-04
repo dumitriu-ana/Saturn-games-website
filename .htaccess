@@ -1,0 +1,53 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+
+RewriteRule ^game/([^/]+) /game.php?game=$1 [L]
+
+RewriteRule ^home /index.php [L]
+
+RewriteRule ^mobile/home /mobile/index.php [L]
+
+RewriteRule ^page/([^/]+) /index.php?page=$1 [L]
+
+RewriteRule ^mobile/game/([^/]+) /mobile/game.php?game=$1 [L]
+
+RewriteRule ^mobile/page/([^/]+) /mobile/index.php?page=$1 [L]
+
+RewriteRule ^profile/([^/]+) /profile.php?player=$1 [L]
+
+RewriteRule ^sitemap\.xml/?$ /sitemap.php
+
+
+
+ErrorDocument 400 /400.php
+
+ErrorDocument 401 /401.php
+
+ErrorDocument 403 /403.php
+
+ErrorDocument 404 /404.php
+
+ErrorDocument 410 /410.php
+
+ErrorDocument 500 /500.php
+
+
+
+#Serve .htc files correctly, for IE fixes
+
+AddType text/x-component .htc
+
+
+
+php_value upload_max_filesize 300M
+
+php_value post_max_size 400M
+
+php_value max_execution_time 200
+
+php_value max_input_time 200

@@ -1,0 +1,405 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #302f2f;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#content a{
+  color: #1177ff !important;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    min-width: 100%;
+    z-index: 100;
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #2c54e8;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar .components{
+  position: fixed;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #2c54e8;
+    min-width: 250px;
+    max-width: 250px;
+    position: fixed;
+    font-size: 30px !important;
+    height: 10vh;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    min-width: 250px;
+    max-width: 250px;
+
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.2em !important;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #2c54e8;
+}
+
+#sidebar ul li.active>a:hover{
+  color: #7386D5;
+  background: #fff;
+}
+
+#sidebarCollapse{
+  background-color: #2c54e8;
+  border-color: #1a37a3;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 30px !important;
+    padding-left: 30px !important;
+    background: #2c54e8;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 30px !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+a.article,
+a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+#content {
+    width: 100%;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+
+.inceput{
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: #212121;
+  color: #adadad;
+  width: 100%;
+}
+
+.inceput p{
+  color: #adadad;
+}
+
+#faq{
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 100%;
+}
+
+#faq a{
+  color: inherit;
+  background-color: inherit;
+}
+
+#faq a:active{
+  color: inherit;
+  background-color: inherit;
+}
+
+#faq .panel{
+  border: solid;
+  border-width: 1px;
+  border-color: #cecece;
+  padding: 2%;
+}
+
+.navbar-inlocuire{
+  width: 100%;
+  margin-top: 60px;
+}
+
+input[type="text"]{
+  width: 75% !important;
+}
+
+table{
+  border-radius: 3px;
+}
+
+.linie-sub{
+  background-color: #c4c4c4;
+  padding: 5px;
+  border-radius: 3px;
+  min-height: 45px;
+  margin-bottom: 5px;
+}
+
+.linie-sub a, .linie-sub p{
+  vertical-align: middle;
+  font-size: 35px;
+  line-height: 40px;
+}
+
+@media only screen and (max-width: 1000px) {
+  p{
+    font-size: 30px!important;
+  }
+
+  button{
+    font-size: 45px !important;
+  }
+  input, textarea, select{
+    font-size:30px !important;
+  }
+
+  select{
+    height: 70px !important;
+  }
+
+  label, .tx{
+    font-size: 45px !important;
+  }
+
+  h1{
+    font-size: 65px !important;
+  }
+
+  .form-group img{
+    width: 100% !important;
+  }
+
+  #sidebar ul li a {
+    font-size: 30px !important;
+  }
+}
+
+.linie-mesaj
+{
+  background-color: #c4c4c4;
+  padding: 5px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.linie-mesaj p{
+  color: #000;
+}
+
+.profil{
+  color: white;
+  font-weight: 900;
+  font-size: 30px !important;
+}
+
+.profil a{
+  font-size: 1.5em !important;
+}
+
+.profil img{
+  background-color: #000;
+  border-radius: 5px;
+  border: solid;
+  border-width: 1px;
+  border-color: white;
+  padding: 3px;
+}
+
+.contPan{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #d8d8d8;
+  z-index: 300;
+}
+
+.contPan .login{
+  position: fixed;
+  top:5vh;
+  width: 50%;
+  left:25%;
+  background-color: white;
+  padding: 5px;
+  padding-top: 50px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .contPan .login{
+    width: 100%;
+    left:0;
+    top:0;
+    height: 100%;
+    font-size: 20px !important;
+  }
+
+  .contPan .login h3{
+    font-size: 30px !important;
+  }
+
+  .contPan button{
+    font-size: 20px !important;
+  }
+
+  .contPan .login input[type="text"],.contPan .login input[type="password"]{
+    font-size: 20px !important;
+  }
+
+  .contPan p, .contPan label{
+    font-size: 30px !important;
+  }
+
+}
+
+.contPan .login h3{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  color: white !important;
+  background-color: #357bea !important;
+}
+
+.contPan .login button{
+  border-radius: 0;
+  border: none;
+  background-color: #357bea !important;
+  color: white;
+}
+
+.contPan .login input[type="text"],.contPan .login input[type="password"]{
+  border-radius: 0;
+}
+
+.navbar button{
+  padding: 0;
+  width: 50px;
+  height: 50px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .navbar button{
+    border-radius: 15px;
+  }
+
+  .navbar-inlocuire{
+    margin-top: 70px;
+  }
+}
+
+.navbar .fas{
+  margin:0;
+  padding: 0;
+  position: absolute !important;
+  top:0 !important;
+  left:0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}

@@ -1,0 +1,48 @@
+{ELEMENTS}[[
+{SLIDE}
+({
+"type":2
+"text":"rect"
+"x":300
+"y":147
+"size_x":100
+"size_y":100
+"color":(66,68,90,255)
+"layer":1
+"font_path":"undefined"
+"font_size":32
+"img_src":""
+"rw":0
+"rx":0
+"ry":0
+"rz":0
+"alignX":"0.5"
+"alignY":"1"
+"stroke":1
+"fill":1
+"visible":1
+})
+{SLIDE}
+]]{ELEMENTS}
+{LAYERS}[
+    [
+        {
+            "value": 0,
+            "name": "Layer0",
+            "visible": true
+        },
+        {
+            "value": 1,
+            "name": "Layer1",
+            "visible": true
+        }
+    ]
+]{LAYERS}
+{BACKGROUNDS}[[
+({
+"src":"assets/imgs/16786965235c8df81aa59f9628213034sunday-17-mar-19-073242-utc1552807962678.jpg"
+})
+]]{BACKGROUNDS}
+{DELAYS}[
+    1
+]{DELAYS}

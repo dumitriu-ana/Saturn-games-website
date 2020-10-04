@@ -1,0 +1,88 @@
+@font-face {
+  src: url("../fonts/Sonika.ttf");
+  font-family: Sonika;
+}
+
+@font-face {
+  src: url("../fonts/Courier.ttf");
+  font-family: Courier;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+.error-container{
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: #d6d6d6 !important;
+
+  z-index: 999999 !important;
+}
+
+.error-nav{
+  position: fixed;
+  margin: auto;
+  left:0;
+  right: 0;
+  padding: 15px;
+
+  font-family: Courier;
+
+  background-color: #a52424;
+  color: white;
+
+  font-size: 25px;
+}
+
+.code-preview{
+  margin-top: 250px;
+  background-color: #3a3939;
+  color: white !important;
+  border-color: white;
+
+  padding: 5px;
+  height: 400px !important;
+
+  overflow-x: auto;
+  overflow-y: auto;
+
+  font-family: Courier;
+  font-size: 15px;
+}
+.err-no{
+  font-family: Courier;
+}
+
+.code-preview tr, .code-preview td, .code-preview th{
+  border-top: none !important;
+}
+
+.code-preview table, .code-preview tr, .code-preview td, .code-preview th{
+  width: auto !important;
+}
+
+.code-preview th{
+  border-right: solid !important;
+  border-color: #a0a0a0 !important;
+  color: #a0a0a0 !important;
+  border-width: 1px !important;
+  width: 25px;
+}
+
+.code-preview .error{
+  color: #d80d0d !important;
+}
+
+.code-preview .no-error{
+  color: white !important;
+}
